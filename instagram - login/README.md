@@ -8,6 +8,6 @@ Esse é o repositório da nossa aula de Flexbox, na qual vamos fazer a interface
 * [CSS básico](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
 
 ## Demonstração
-* [clique aqui](https://instagram-login-kssmw5gn6-mr-kuro.vercel.app/)
+* [clique aqui](https://instagram-login-git-master-mr-kuro.vercel.app/)
 
 ## 🚀 Let's code! 🚀
