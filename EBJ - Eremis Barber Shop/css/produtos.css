@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: linear-gradient(0deg, #000, #404040, #5e5e5e, #000);
+  color: #ffffff;
+}
+
+li:hover {
+  animation: 1s alternate-reverse infinite opacity;
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 50%;
+  }
+
+  100% {
+    opacity: 100%;
+  }
+}
+
+.CabecalhoPrincipal .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2em;
+  margin: 1em 0;
+}
+
+.logo {
+  width: 13%;
+  border-radius: 25%;
+  flex: 0;
+  padding: 1em 0;
+}
+
+.logo:hover {
+  animation: flip-horizontal-bottom 4s cubic-bezier(0.455, 0.03, 0.515, 0.955)
+    infinite alternate both;
+}
+
+.cabecalhoPrincipal-nav {
+  flex: 1;
+}
+
+.cabecalhoPrincipal-nav .cabecalhoPrincipal-nav-list {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: end;
+  margin: 0 9% 0 0;
+}
+
+.cabecalhoPrincipal-nav-item a {
+  margin-left: 1em;
+  font-size: 1.2em;
+  color: #ffffff !important;
+  text-decoration-line: none !important;
+  transition: color 1s;
+}
+
+.cabecalhoPrincipal-nav-item:nth-child(3) a {
+  color: rgb(151, 130, 90) !important;
+}
+
+.cabecalhoPrincipal-nav-item:first-child a {
+  margin-left: 0;
+}
+.cabecalhoPrincipal-nav-item:last-child a {
+  margin-right: 0;
+}
+
+.cabecalhoPrincipal-nav-item a:hover {
+  color: rgb(146, 103, 11) !important;
+  text-size-adjust: 2em !important;
+}
+
+.conteudoPrincipal .container {
+  display: flex;
+  justify-content: center;
+}
+
+.produtos .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.produtos-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  flex: 1 1;
+}
+
+.produtos-item {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  flex: 1 10%;
+  border: 2px solid white;
+  border-radius: 7%;
+  width: 100%;
+  padding: 2%;
+  margin-left: 1em;
+  text-align: center;
+}
+
+.produtos-item img {
+  width: 100%;
+}
+
+.produtos-item h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.produtos-item p,
+.produtos-item h2 {
+  margin: 1em 0;
+}
+
+.footer .container {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+
+  margin: 2em 0 0 0;
+}
+
+.copyrigth {
+  color: #ffffff;
+  padding: 1em 0 2em;
+}
+
+.copyrigth:hover {
+  animation: flip-horizontal-bottom 4s cubic-bezier(0.455, 0.03, 0.515, 0.955)
+    infinite alternate both;
+}
+
+@keyframes flip-horizontal-bottom {
+  0% {
+    box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e,
+      0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+    transform: translateX(0) translateY(0);
+    transform: scale(1) rotateX(0);
+  }
+  50% {
+    transform: scale(1.3) rotateX(-90deg);
+  }
+  100% {
+    transform: scale(1) rotateX(-180deg);
+    box-shadow: 1px -1px #3e3e3e, 2px -2px #3e3e3e, 3px -3px #3e3e3e,
+      4px -4px #3e3e3e, 5px -5px #3e3e3e, 6px -6px #3e3e3e, 7px -7px #3e3e3e,
+      8px -8px #3e3e3e;
+    transform: translateX(-8px) translateY(8px);
+  }
+}
