@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EBJ | Contatos</title>
+
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/contatos.css" />
+  </head>
+
+  <body>
+    <header class="CabecalhoPrincipal">
+      <div class="container">
+        <img
+          class="logo"
+          src="../imgs/logo preto.jpg"
+          alt="logo da barbearia"
+        />
+
+        <nav class="cabecalhoPrincipal-nav">
+          <ul class="cabecalhoPrincipal-nav-list">
+            <li class="cabecalhoPrincipal-nav-item">
+              <a href="../index.html">Home</a>
+            </li>
+            <li class="cabecalhoPrincipal-nav-item">
+              <a href="../html/produtos.html">Produtos</a>
+            </li>
+            <li class="cabecalhoPrincipal-nav-item">
+              <a href="../html/agendamento.html">Agendamento Online</a>
+            </li>
+            <li class="cabecalhoPrincipal-nav-item">
+              <a href="../html/contatos.html">Contatos</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="contatos container">
+        <ul class="contatos__lista">
+          <li class="contatos__item contatos__item--tempo">
+            <h2 class="item__titulo">Whatsapp</h2>
+            <p>
+              <a class="item__texto" href="#"
+                >Lorem ipsum dolor sit amet consectetur adipisicing elit.</a
+              >
+            </p>
+          </li>
+          <li class="contatos__item contatos__item--foco">
+            <h2 class="item__titulo">Facebook</h2>
+            <p>
+              <a class="item__texto" href="#" rel="páina do facebook"
+                >Lorem ipsum, dolor sit amet consectetur adipisicing elit.</a
+              >
+            </p>
+          </li>
+          <li class="contatos__item contatos__item--especialistas">
+            <h2 class="item__titulo">Instagram</h2>
+            <p>
+              <a class="item__texto" href="#"
+                >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Commodi, incidunt. Non, odio.</a
+              >
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="formulario">
+        <div class="container">
+          <form class="form">
+            <fieldset class="form_content">
+              <legend class="formulario_titulo">
+                <h1>Formulário de Reclamação EBJ</h1>
+              </legend>
+              <p>
+                Obrigado por preencher esse formulário, amigo! Você é um amigo!
+              </p>
+
+              <div class="informacoes_pessoais">
+                <div class="form_item nome">
+                  <label for="nome">Nome</label>
+                  <input
+                    type="text"
+                    name="usuario_nome"
+                    maxlength="60"
+                    minlength="3"
+                    id="nome"
+                    required
+                  />
+                </div>
+
+                <div class="form_item telefone">
+                  <label for="telefone">Telefone</label>
+                  <input
+                    type="tel"
+                    name="usuario_telefone"
+                    maxlength="11"
+                    minlength="11"
+                    id="telefone"
+                    required
+                  />
+                </div>
+
+                <div class="form_item idade">
+                  <label for="idade">Idade</label>
+                  <input type="number" max="99" min="13" id="idade" required />
+                </div>
+              </div>
+
+              <fieldset class="form_item cabelereiro">
+                <legend for="cabelereiro">
+                  Qual cabelereiro melhor te atende?
+                </legend>
+                <select aria-valuetext="" name="cabelereiro">
+                  <option value="disble" disabled selected>
+                    Selecione seu cabelereiro
+                  </option>
+                  <option value="Desenvolvedor">Eremis</option>
+                  <option value="Medico">Jhonathan</option>
+                  <option value="Pastor">Rodigo</option>
+                  <option value="Militar">Thiago</option>
+                </select>
+              </fieldset>
+
+              <fieldset class="form_item recomendacao">
+                <legend>Você recomendaria a EBJ Barbearia?</legend>
+                <label
+                  ><input
+                    type="radio"
+                    name="recomendacao"
+                    value="sim"
+                    checked
+                  />Sim</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="recomendacao"
+                    value="nao"
+                  />Não</label
+                >
+                <label
+                  ><input
+                    type="radio"
+                    name="recomendacao"
+                    value="talve"
+                  />Talvez</label
+                >
+              </fieldset>
+
+              <fieldset class="form_item cortes">
+                <legend for="cortes">Qual corte de cabelo prefere?</legend>
+                <select name="corte_pescolhido" id="cortes">
+                  <option value="disabled" disabled selected>
+                    Selecione um corte
+                  </option>
+                  <option value="Buzzcut">Buzzcut</option>
+                  <option value="Degradê">Degradê</option>
+                  <option value="Top Knot">Top Knot</option>
+                  <option value="Razor Part">Razor Part</option>
+                  <option value="Surfista">Surfista</option>
+                </select>
+              </fieldset>
+
+              <fieldset class="form_item melhorias">
+                <legend for="melhorias">
+                  O que você gostaria que melhorasse?
+                </legend>
+                <p><small>Selecione todas as opçês que se aplicam.</small></p>
+                <label
+                  ><input
+                    class="melhorar"
+                    type="checkbox"
+                  />Estabelecimento</label
+                >
+                <label
+                  ><input class="melhorar" type="checkbox" />Horários</label
+                >
+                <label><input class="melhorar" type="checkbox" />Tempo</label>
+                <label
+                  ><input class="melhorar" type="checkbox" />Serviços</label
+                >
+              </fieldset>
+
+              <div class="form_item mensagem">
+                <label for="msg">Mensagen</label>
+                <textarea
+                  name="msg"
+                  id="msg"
+                  placeholder="escreva uma descriança"
+                ></textarea>
+              </div>
+              <div class="button_container">
+                <button class="button" type="submit">Enviar formulario</button>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <img class="logo" src="../imgs/logo preto.jpg" alt="logo-branco.png" />
+        <p class="copyrigth">&copy; Copyrigth Mr. Kuro - 2023</p>
+      </div>
+    </footer>
+  </body>
+</html>

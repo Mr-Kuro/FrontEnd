@@ -1,0 +1,324 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+:root {
+  --white: #ffffff;
+  --black: #000;
+  --cinza-claro: #5e5e5e;
+  --cinza-escuro-transparente: rgb(64, 64, 64, 0.6);
+  --cinza-escuro: #404040;
+  --font-size: 1.3rem;
+  --line-heigth: 1.8;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: linear-gradient(
+    0deg,
+    var(--black),
+    var(--cinza-escuro),
+    var(--cinza-claro),
+    var(--black)
+  );
+  color: var(--white);
+  font-size: var(--font-size);
+  line-height: var(--line-heigth);
+}
+
+li:hover {
+  animation: 1s alternate-reverse infinite opacity;
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 50%;
+  }
+
+  100% {
+    opacity: 100%;
+  }
+}
+
+.CabecalhoPrincipal .container {
+  flex-flow: column nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 2rem;
+  padding: 0 0 2rem;
+  width: 100%;
+}
+
+.logo {
+  width: 10rem;
+  border-radius: 25%;
+}
+/*
+.logo:hover {
+  transform: rotate(-20deg) rotatey(-20deg);
+  box-shadow:#3e3e3e 5px -5px;
+}
+*/
+
+.cabecalhoPrincipal-nav-list {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  width: 100%;
+}
+
+.cabecalhoPrincipal-nav-item {
+  margin: 0 1rem;
+}
+
+.cabecalhoPrincipal-nav-item a {
+  color: var(--white);
+  text-decoration: none;
+  transition: color 1s;
+}
+
+.cabecalhoPrincipal-nav-item a:hover {
+  color: rgb(146, 103, 11) !important;
+  text-size-adjust: 2em !important;
+}
+
+.cabecalhoPrincipal-nav-item:nth-child(3) a {
+  color: rgb(151, 130, 90) !important;
+}
+
+.contatos .container {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+
+.contatos__lista {
+  margin: 2rem;
+  flex-flow: row wrap;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.contatos__item {
+  width: 35%;
+  min-width: 330px;
+
+  padding: 2rem 0 2rem 5rem;
+  box-sizing: border-box;
+}
+
+.contatos__item:hover {
+  border: 2px solid var(--white);
+  border-radius: 15%;
+}
+
+.contatos__item--tempo {
+  background: url(../imgs/whatsapp-icon-preto.png) 1rem 2.5rem no-repeat;
+  background-size: 3.5rem;
+}
+
+.contatos__item--foco {
+  background: url(../imgs/facebook-icon-preto.png) 1.25rem 2.5rem no-repeat;
+  background-size: 3.5rem;
+}
+
+.contatos__item--especialistas {
+  background: url(../imgs/instagram-icon-preto.png) 1.25rem 2.5rem no-repeat;
+  background-size: 3.5rem;
+}
+
+.item__titulo {
+  color: var(--cinza-claro);
+  font-weight: 700;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+
+  margin-bottom: 1.5rem;
+}
+
+.item__texto {
+  line-height: normal;
+  color: var(--white);
+  text-decoration: none;
+}
+
+.formulario .container {
+  display: flex;
+  flex-flow: row-reverse nowrap;
+  justify-content: space-around;
+  align-items: center;
+  border: 1x solid var(--cinza-escuro);
+  background: linear-gradient(
+    0deg,
+    var(--black),
+    var(--cinza-escuro),
+    var(--black)
+  );
+}
+
+.form_content {
+  border-radius: 5%;
+  margin: 1rem;
+  font-size: var(--font-size);
+  flex: 2 2;
+  padding: 1rem;
+}
+
+.formulario_titulo {
+  padding: 1rem;
+  font-size: var(--font-size);
+  font-weight: 700;
+  text-align: center;
+}
+
+.form_content > p {
+  margin: 2rem 0;
+}
+
+.informacoes_pessoais,
+.cabelereiro,
+.recomendacao,
+.cortes,
+.melhorias,
+.msg {
+  margin: 3rem 0;
+}
+
+.informacoes_pessoais .form_item input {
+  display: block;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  width: 93%;
+  font-size: var(--font-size);
+  border-radius: 5%;
+  background: var(--cinza-escuro);
+  color: var(--white);
+}
+
+.cabelereiro select {
+  display: block;
+  padding: 0.3rem 0;
+  margin: 1% 0;
+  width: 95%;
+  border-radius: 5%;
+  background: var(--cinza-escuro);
+  color: var(--white);
+  font-size: var(--font-size);
+}
+
+.recomendacao {
+  line-height: 2rem;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.cortes select {
+  display: block;
+  padding: 0.3rem 0;
+  margin: 1% 0;
+  width: 95%;
+  border-radius: 5%;
+  background: var(--cinza-escuro);
+  color: var(--white);
+  font-size: var(--font-size);
+}
+
+.melhorias {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.melhorias > p small {
+  font-size: small;
+}
+
+.mensagem {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.mensagem textarea {
+  display: block;
+  height: 10rem;
+  width: 98%;
+  border-radius: 5%;
+  background: var(--cinza-escuro);
+  color: var(--white);
+  font-size: var(--font-size);
+  padding: 0.4rem;
+}
+
+.button_container {
+  margin: 2rem 0;
+  display: flex;
+  justify-content: center;
+}
+.button {
+  align-self: center;
+  margin: 2rem 0;
+  width: 50vw;
+  padding: 2vw 1vw;
+  font-size: var(--font-size);
+  background: linear-gradient(
+    50deg,
+    var(--cinza-escuro-transparente),
+    var(--cinza-escuro)
+  );
+  color: var(--white);
+}
+
+.footer .container {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+
+  margin: 2em 0 0 0;
+}
+
+.copyrigth {
+  color: #ffffff;
+  padding: 1em 0 2em;
+  transition: 1.4s;
+  border-radius: 25%;
+}
+
+/* tablets */
+@media screen and (min-width: 768px) {
+  .formulario .container {
+    display: flex;
+    background: url(../imgs/banner-lateral.jpg);
+    background-size: contain;
+  }
+  .form_content {
+    width: 80vw;
+    background-color: rgba(47, 46, 47, 0.912);
+  }
+}
+
+/* desktop */
+@media screen and (min-width: 1024px) {
+  :root {
+    --font-size: 1rem;
+    --line-heigth: 1.8;
+  }
+
+  .CabecalhoPrincipal .container {
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+  .cabecalhoPrincipal-nav-item:first-child a {
+    margin: 0 0;
+  }
+
+  .cabecalhoPrincipal-nav-item:last-child a {
+    margin-right: 2rem;
+  }
+
+  .contatos .container {
+    padding-left: calc((100% - 940px) / 2);
+    padding-right: calc((100% - 940px) / 2);
+  }
+}
