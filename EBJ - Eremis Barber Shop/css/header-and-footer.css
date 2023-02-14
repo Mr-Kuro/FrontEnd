@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+:root {
+  --white: #ffffff;
+  --black: #000;
+  --cinza-claro: #5e5e5e;
+  --cinza-escuro-transparente: rgb(64, 64, 64, 0.6);
+  --cinza-escuro: #404040;
+  --font-size: 1.5rem;
+  --line-heigth: 1.8;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: linear-gradient(
+    0deg,
+    var(--black),
+    var(--cinza-escuro),
+    var(--cinza-claro),
+    var(--black)
+  );
+  color: var(--white) !important;
+  font-size: var(--font-size) !important;
+  line-height: var(--line-heigth) !important;
+}
+
+li:hover {
+  animation: 1s alternate-reverse infinite opacity;
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 50%;
+  }
+
+  100% {
+    opacity: 100%;
+  }
+}
+
+.CabecalhoPrincipal .container {
+  flex-flow: column nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 2rem;
+  padding: 0 0 2rem;
+  width: 100%;
+}
+
+.logo {
+  width: 10rem;
+  border-radius: 25%;
+}
+/*
+  .logo:hover {
+    transform: rotate(-20deg) rotatey(-20deg);
+    box-shadow:#3e3e3e 5px -5px;
+  }
+  */
+
+.cabecalhoPrincipal-nav-list {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  width: 100%;
+}
+
+.cabecalhoPrincipal-nav-item {
+  margin: 0 1rem 0 0;
+}
+
+.cabecalhoPrincipal-nav-item a {
+  color: var(--white);
+  text-decoration: none;
+  transition: color 1s;
+}
+
+.cabecalhoPrincipal-nav-item a:hover {
+  color: rgb(146, 103, 11) !important;
+  text-size-adjust: 2em !important;
+}
+
+.cabecalhoPrincipal-nav-item:nth-child(3) a {
+  color: rgb(151, 130, 90) !important;
+}
+
+.footer .container {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+
+  margin: 2em 0 0 0;
+}
+
+.copyrigth {
+  color: #ffffff;
+  padding: 1em 0 2em;
+  transition: 1.4s;
+  border-radius: 25%;
+}
+
+/* tablets */
+@media screen and (min-width: 768px) {
+  .formulario .container {
+    display: flex;
+    background: url(../imgs/banner-lateral.jpg);
+    background-size: contain;
+  }
+  .form_content {
+    width: 80vw;
+    background-color: rgba(47, 46, 47, 0.912);
+  }
+}
+
+/* desktop */
+@media screen and (min-width: 1024px) {
+  :root {
+    --font-size: 1rem;
+    --line-heigth: 1.8;
+  }
+
+  .CabecalhoPrincipal .container {
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+  .cabecalhoPrincipal-nav-item:first-child a {
+    margin: 0 0;
+  }
+
+  .cabecalhoPrincipal-nav-item:last-child a {
+    margin-right: 8rem;
+  }
+
+  .contatos .container {
+    padding-left: calc((100% - 940px) / 2);
+    padding-right: calc((100% - 940px) / 2);
+  }
+}

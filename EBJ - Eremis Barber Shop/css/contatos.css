@@ -38,53 +38,6 @@ li:hover {
   }
 }
 
-.CabecalhoPrincipal .container {
-  flex-flow: column nowrap;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 0 2rem;
-  padding: 0 0 2rem;
-  width: 100%;
-}
-
-.logo {
-  width: 10rem;
-  border-radius: 25%;
-}
-/*
-.logo:hover {
-  transform: rotate(-20deg) rotatey(-20deg);
-  box-shadow:#3e3e3e 5px -5px;
-}
-*/
-
-.cabecalhoPrincipal-nav-list {
-  display: flex;
-  justify-content: center;
-  flex-flow: row wrap;
-  width: 100%;
-}
-
-.cabecalhoPrincipal-nav-item {
-  margin: 0 1rem;
-}
-
-.cabecalhoPrincipal-nav-item a {
-  color: var(--white);
-  text-decoration: none;
-  transition: color 1s;
-}
-
-.cabecalhoPrincipal-nav-item a:hover {
-  color: rgb(146, 103, 11) !important;
-  text-size-adjust: 2em !important;
-}
-
-.cabecalhoPrincipal-nav-item:nth-child(3) a {
-  color: rgb(151, 130, 90) !important;
-}
-
 .contatos .container {
   display: flex;
   justify-content: space-around;
@@ -302,19 +255,6 @@ li:hover {
   :root {
     --font-size: 1rem;
     --line-heigth: 1.8;
-  }
-
-  .CabecalhoPrincipal .container {
-    flex-flow: row wrap;
-    justify-content: space-between;
-  }
-
-  .cabecalhoPrincipal-nav-item:first-child a {
-    margin: 0 0;
-  }
-
-  .cabecalhoPrincipal-nav-item:last-child a {
-    margin-right: 2rem;
   }
 
   .contatos .container {

@@ -20,61 +20,6 @@ li:hover {
   }
 }
 
-.CabecalhoPrincipal .container {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  padding: 2em;
-  margin: 1em 0;
-}
-
-.logo {
-  width: 13%;
-  border-radius: 25%;
-  flex: 0;
-  padding: 1em 0;
-}
-
-.logo:hover {
-  animation: flip-horizontal-bottom 4s cubic-bezier(0.455, 0.03, 0.515, 0.955)
-    infinite alternate both;
-}
-
-.cabecalhoPrincipal-nav {
-  flex: 1;
-}
-
-.cabecalhoPrincipal-nav .cabecalhoPrincipal-nav-list {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: end;
-  margin: 0 9% 0 0;
-}
-
-.cabecalhoPrincipal-nav-item a {
-  margin-left: 1em;
-  font-size: 1.2em;
-  color: #ffffff !important;
-  text-decoration-line: none !important;
-  transition: color 1s;
-}
-
-.cabecalhoPrincipal-nav-item:nth-child(3) a {
-  color: rgb(151, 130, 90) !important;
-}
-
-.cabecalhoPrincipal-nav-item:first-child a {
-  margin-left: 0;
-}
-.cabecalhoPrincipal-nav-item:last-child a {
-  margin-right: 0;
-}
-
-.cabecalhoPrincipal-nav-item a:hover {
-  color: rgb(146, 103, 11) !important;
-  text-size-adjust: 2em !important;
-}
-
 .conteudoPrincipal .container {
   display: flex;
   justify-content: center;
