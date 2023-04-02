@@ -114,7 +114,19 @@ li:hover {
   padding: 1em 0;
   margin: 0;
   width: 98vw;
+  height: 80vh;
   animation: 5s alternate grow;
+}
+
+@keyframes grow {
+  0% {
+    width: 80vw;
+  }
+  50% {
+    width: 100vw;
+  }
+  100% {
+  }
 }
 
 

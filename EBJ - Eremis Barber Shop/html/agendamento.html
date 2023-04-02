@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=], initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/header-and-footer.css">
+
     <title>EBJ | Agendamento</title>
   </head>
   <style>
@@ -13,18 +17,56 @@
 
     h1,
     h3 {
+      font-size: 1.4rem;
       color: aliceblue;
       font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
       margin: 2rem auto;
       text-align: center;
     }
   </style>
-  <body>
-    <main>
-      <h1>Sorry, but this page is not working now!</h1>
-      <h3>Its the only page what have the JavaScript working</h3>
 
-      <canvas width="300" height="300"></canvas>
+  <body>
+    <header class="CabecalhoPrincipal">
+      <div class="container">
+        <img
+          class="logo"
+          src="../imgs/logo preto.jpg"
+          alt="logo da barbearia"
+        />
+
+        <nav class="cabecalhoPrincipal-nav">
+          <ul class="cabecalhoPrincipal-nav-list">
+            <li class="cabecalhoPrincipal-nav-item">
+              <a href="../index.html">Home</a>
+            </li>
+            <li class="cabecalhoPrincipal-nav-item">
+              <a href="../html/produtos.html">Produtos</a>
+            </li>
+            <li class="cabecalhoPrincipal-nav-item">
+              <a href="../html/agendamento.html">Agendamento Online</a>
+            </li>
+            <li class="cabecalhoPrincipal-nav-item">
+              <a href="../html/contatos.html">Contatos</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="banner-box">
+        <img
+          class="banner-img"
+          src="../imgs/banner.jpg"
+          alt="banner da barbearia"
+        />
+      </div>
+
+      <h1>Sorry, but this page is not working now!</h1>
+      <h3>That is the only page what have the JavaScript working</h3>
+      
+
+      <canvas width="300" height="400"></canvas>
 
       <script src="../js/agendamento.js"></script>
     </main>
