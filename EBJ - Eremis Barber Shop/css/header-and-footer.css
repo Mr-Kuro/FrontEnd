@@ -39,17 +39,20 @@ li:hover {
 }
 
 .CabecalhoPrincipal .container {
+  background-color: #464646;
   flex-flow: column nowrap;
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin: 0 0 2rem;
-  padding: 0 0 2rem;
-  width: 100%;
+  justify-content: space-around !important;
+  margin: 0 auto 2rem;
+  padding: 1.2rem 0 2rem;
+  width: 98vw;
+  opacity: 80%;
+  align-content: center;
 }
 
 .logo {
-  width: 10rem;
+  width: 6rem;
   border-radius: 25%;
 }
 /*
@@ -77,12 +80,12 @@ li:hover {
 }
 
 .cabecalhoPrincipal-nav-item a:hover {
-  color: rgb(146, 103, 11) !important;
+  color: rgb(151, 130, 90) !important;
   text-size-adjust: 2em !important;
 }
 
 .cabecalhoPrincipal-nav-item:nth-child(3) a {
-  color: rgb(151, 130, 90) !important;
+  color: #F4B766 !important;
 }
 
 .footer .container {
@@ -101,8 +104,34 @@ li:hover {
   border-radius: 25%;
 }
 
+.banner-box {
+  display: none;
+  background-color: #464646;
+}
+
+.banner-img {
+  border-radius: 10%;
+  padding: 1em 0;
+  margin: 0;
+  width: 98vw;
+  animation: 5s alternate grow;
+}
+
+
 /* tablets */
 @media screen and (min-width: 768px) {
+  
+  .banner-box {
+    padding-top: 2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .CabecalhoPrincipal .container {
+    position: fixed;
+  }
   .formulario .container {
     display: flex;
     background: url(../imgs/banner-lateral.jpg);
@@ -120,6 +149,8 @@ li:hover {
     --font-size: 1rem;
     --line-heigth: 1.8;
   }
+
+  
 
   .CabecalhoPrincipal .container {
     flex-flow: row wrap;
