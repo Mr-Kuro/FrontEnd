@@ -1,13 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
 :root {
+  /* Cores */
   --white: #ffffff;
   --black: #000;
   --cinza-claro: #5e5e5e;
-  --cinza-escuro-transparente: rgb(64, 64, 64, 0.6);
   --cinza-escuro: #404040;
-  --font-size: 1.5rem;
+  --cinza-escuro-transparente: rgb(64, 64, 64, 0.6);
+
   --line-heigth: 1.8;
+
+  /* Fontes */
+  --font-titulo: 1.5rem;
+  --font-subtituulo: 1.25rem;
+  --font-texto-normal: 1rem;
+  --font-texto-pequena: 0.875rem;
+
+  /* paddin */
+  --paddin-container: 2rem 5vw 5vw;
 }
 
 body {
@@ -19,41 +29,59 @@ body {
     var(--cinza-claro),
     var(--black)
   );
-  color: var(--white) !important;
-  font-size: var(--font-size) !important;
-  line-height: var(--line-heigth) !important;
+  color: #ffffff;
+  line-height: var(--line-heigth);
+  font-size: var(--font-texto-normal);
 }
 
-li:hover {
-  animation: 1s alternate-reverse infinite opacity;
+.cabecalhoPrincipal-nav-list:active,
+.cabecalhoPrincipal-nav-list:hover .titulo-topico:active,
+.titulo-topico:hover {
+  animation: 1s alternate infinite opacity;
 }
 
 @keyframes opacity {
-  0% {
+  from {
     opacity: 50%;
   }
 
-  100% {
+  to {
     opacity: 100%;
   }
 }
 
+
+@keyframes grow {
+  0% {
+    width: 80vw;
+  }
+  50% {
+    width: 100vw;
+  }
+  100% {
+  }
+}
+
+
 .CabecalhoPrincipal .container {
-  background-color: #464646;
+  background-color: var(--cinza-escuro-transparente);
+
   flex-flow: column nowrap;
   display: flex;
   align-items: center;
   justify-content: space-around !important;
   margin: 0 auto 2rem;
   padding: 1.2rem 0 2rem;
-  width: 98vw;
-  opacity: 80%;
+  width: 100vw;
+  opacity: 90%;
   align-content: center;
 }
 
 .logo {
   width: 6rem;
   border-radius: 25%;
+
+  transition: all 1s;
 }
 /*
   .logo:hover {
@@ -64,7 +92,7 @@ li:hover {
 
 .cabecalhoPrincipal-nav-list {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-flow: row wrap;
   width: 100%;
 }
@@ -85,7 +113,20 @@ li:hover {
 }
 
 .cabecalhoPrincipal-nav-item:nth-child(3) a {
-  color: #F4B766 !important;
+  color: #f4b766 !important;
+}
+
+.banner-box {
+  display: none;
+}
+
+.banner-img {
+  border-radius: 10%;
+  padding: 1em 0;
+  margin: 0;
+  width: 98vw;
+  height: 90vh;
+  animation: 5s alternate grow;
 }
 
 .footer .container {
@@ -100,22 +141,21 @@ li:hover {
 .copyrigth {
   color: #ffffff;
   padding: 1em 0 2em;
-  transition: 1.4s;
-  border-radius: 25%;
+
+  transition: all 2s;
 }
 
-.banner-box {
-  display: none;
-  background-color: #464646;
+.copyrigth:hover,
+.copyrigth:active {
+  transform: scale(1) rotateX(-30deg);
 }
 
-.banner-img {
-  border-radius: 10%;
-  padding: 1em 0;
-  margin: 0;
-  width: 98vw;
-  height: 80vh;
-  animation: 5s alternate grow;
+.logo:hover,
+.logo:active {
+  box-shadow: 1px -1px var(--black), 2px -2px var(--cinza-claro),
+    3px -3px var(--cinza-escuro), 4px -4px #3e3e3e, 5px -5px #3e3e3e,
+    6px -6px #252424, 8px -8px var(--cinza-claro);
+  transform: scale(.99) rotateX(-30deg);
 }
 
 @keyframes grow {
@@ -129,15 +169,19 @@ li:hover {
   }
 }
 
-
 /* tablets */
 @media screen and (min-width: 768px) {
-  
-  .banner-box {
-    padding-top: 2rem;
+  .banner-img {
+    border-radius: 10%;
+    padding: 0.25em 0;
+    margin: 0;
+    width: 98vw;
+    height: 80vh;
+    animation: 5s alternate grow;
+  }
 
+  .banner-box {
     display: flex;
-    align-items: center;
     justify-content: center;
   }
 
@@ -157,12 +201,10 @@ li:hover {
 
 /* desktop */
 @media screen and (min-width: 1024px) {
-  :root {
-    --font-size: 1rem;
-    --line-heigth: 1.8;
+  .banner-box {
+    padding: 1.25em 0;
+    height: 80vh;
   }
-
-  
 
   .CabecalhoPrincipal .container {
     flex-flow: row wrap;

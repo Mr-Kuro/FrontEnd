@@ -1,28 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
-:root {
-  --white: #ffffff;
-  --black: #000;
-  --cinza-claro: #5e5e5e;
-  --cinza-escuro-transparente: rgb(64, 64, 64, 0.6);
-  --cinza-escuro: #404040;
-  --font-size: 1.3rem;
-  --line-heigth: 1.8;
-}
-
-body {
-  font-family: "Montserrat", sans-serif;
-  background: linear-gradient(
-    0deg,
-    var(--black),
-    var(--cinza-escuro),
-    var(--cinza-claro),
-    var(--black)
-  );
-  color: var(--white);
-  font-size: var(--font-size);
-  line-height: var(--line-heigth);
-}
 
 li:hover {
   animation: 1s alternate-reverse infinite opacity;
