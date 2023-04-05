@@ -7,12 +7,15 @@
   --cinza-claro: #5e5e5e;
   --cinza-escuro: #404040;
   --cinza-escuro-transparente: rgb(64, 64, 64, 0.6);
+  --laranja-claro: #f4b766;
+  --laranja-escuro: rgb(129, 100, 45);
+  --laranja-escuro-transparente: #a9712685;
 
   --line-heigth: 1.8;
 
   /* Fontes */
   --font-titulo: 1.5rem;
-  --font-subtituulo: 1.25rem;
+  --font-subtitulo: 1.125rem;
   --font-texto-normal: 1rem;
   --font-texto-pequena: 0.875rem;
 
@@ -34,22 +37,22 @@ body {
   font-size: var(--font-texto-normal);
 }
 
-.cabecalhoPrincipal-nav-list:active,
-.cabecalhoPrincipal-nav-list:hover .titulo-topico:active,
+.cabecalhoPrincipal-nav-item:active,
+.cabecalhoPrincipal-nav-item:hover,
+.titulo-topico:active,
 .titulo-topico:hover {
   animation: 1s alternate infinite opacity;
 }
 
 @keyframes opacity {
   from {
-    opacity: 50%;
+    opacity: 0%;
   }
 
   to {
     opacity: 100%;
   }
 }
-
 
 @keyframes grow {
   0% {
@@ -61,7 +64,6 @@ body {
   100% {
   }
 }
-
 
 .CabecalhoPrincipal .container {
   background-color: var(--cinza-escuro-transparente);
@@ -107,13 +109,13 @@ body {
   transition: color 1s;
 }
 
-.cabecalhoPrincipal-nav-item a:hover {
-  color: rgb(151, 130, 90) !important;
-  text-size-adjust: 2em !important;
+.cabecalhoPrincipal-nav-item:nth-child(3) a {
+  color: var(--laranja-claro);
 }
 
-.cabecalhoPrincipal-nav-item:nth-child(3) a {
-  color: #f4b766 !important;
+.cabecalhoPrincipal-nav-item a:hover {
+  color: var(--laranja-escuro);
+  text-size-adjust: 2em ;
 }
 
 .banner-box {
@@ -152,10 +154,10 @@ body {
 
 .logo:hover,
 .logo:active {
-  box-shadow: 1px -1px var(--black), 2px -2px var(--cinza-claro),
-    3px -3px var(--cinza-escuro), 4px -4px #3e3e3e, 5px -5px #3e3e3e,
-    6px -6px #252424, 8px -8px var(--cinza-claro);
-  transform: scale(.99) rotateX(-30deg);
+  box-shadow: 2px -2px var(--black), 4px -4px var(--cinza-escuro),
+    6px -6px var(--cinza-claro), 8px -8px #3e3e3e, 10px -10px var(--black),
+    12px -12px var(--black), 14px -14px var(--white);
+  transform: scale() rotateX(-30deg);
 }
 
 @keyframes grow {
@@ -190,7 +192,7 @@ body {
   }
   .formulario .container {
     display: flex;
-    background: url(../imgs/banner-lateral.jpg);
+    background: url(../imgs/banner-2-escuro.jpg);
     background-size: contain;
   }
   .form_content {

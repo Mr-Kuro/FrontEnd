@@ -1,18 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
-
-li:hover {
-  animation: 1s alternate-reverse infinite opacity;
-}
-
-@keyframes opacity {
-  0% {
-    opacity: 50%;
-  }
-
-  100% {
-    opacity: 100%;
-  }
+body{
+  background: url(../imgs/banner-2-escuro.jpg);
+  background-size: contain;
 }
 
 .contatos .container {
@@ -36,24 +26,34 @@ li:hover {
 
   padding: 2rem 0 2rem 5rem;
   box-sizing: border-box;
+  
+  background: url();
 }
 
 .contatos__item:hover {
-  border: 2px solid var(--white);
-  border-radius: 15%;
+  border: 3px solid var(--white);
+  border-radius: 3%;
+  transition: all .5s;
+
+  
+
+  box-shadow: 2px -2px var(--black), 4px -4px var(--cinza-escuro),
+    6px -6px var(--cinza-claro), 8px -8px #3e3e3e, 10px -10px #3e3e3e,
+    12px -12px var(--black), 14px -14px var(--white);
+  transform: scale(.99) rotateX(-30deg);;
 }
 
-.contatos__item--tempo {
+.contatos__item--whatsapp {
   background: url(../imgs/whatsapp-icon-preto.png) 1rem 2.5rem no-repeat;
   background-size: 3.5rem;
 }
 
-.contatos__item--foco {
+.contatos__item--facebook {
   background: url(../imgs/facebook-icon-preto.png) 1.25rem 2.5rem no-repeat;
   background-size: 3.5rem;
 }
 
-.contatos__item--especialistas {
+.contatos__item--instagram {
   background: url(../imgs/instagram-icon-preto.png) 1.25rem 2.5rem no-repeat;
   background-size: 3.5rem;
 }
@@ -73,18 +73,26 @@ li:hover {
   text-decoration: none;
 }
 
+.bg_form{
+  background: var(--cinza-escuro-transparente);
+}
+
 .formulario .container {
   display: flex;
   flex-flow: row-reverse nowrap;
   justify-content: space-around;
   align-items: center;
-  border: 1x solid var(--cinza-escuro);
+
+  /* border: 1x solid var(--cinza-escuro);
+
   background: linear-gradient(
     0deg,
     var(--black),
     var(--cinza-escuro),
     var(--black)
-  );
+  ); */
+
+  
 }
 
 .form_content {
@@ -97,13 +105,15 @@ li:hover {
 
 .formulario_titulo {
   padding: 1rem;
-  font-size: var(--font-size);
+  font-size: var(--font-titulo);
   font-weight: 700;
   text-align: center;
 }
 
 .form_content > p {
   margin: 2rem 0;
+  text-align: center;
+  font-size: var(--font-subtituulo);
 }
 
 .informacoes_pessoais,
@@ -184,6 +194,7 @@ li:hover {
   display: flex;
   justify-content: center;
 }
+
 .button {
   align-self: center;
   margin: 2rem 0;
@@ -192,35 +203,30 @@ li:hover {
   font-size: var(--font-size);
   background: linear-gradient(
     50deg,
-    var(--cinza-escuro-transparente),
-    var(--cinza-escuro)
+    var(--laranja-escuro-transparente),
+    var(--laranja-escuro),
+    var(--laranja-escuro-transparente)
   );
+
+  transition: all 1s;
   color: var(--white);
+
 }
 
-.footer .container {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-items: center;
-
-  margin: 2em 0 0 0;
+.button:active, button:hover {
+  border-radius: 15%;
+  background: linear-gradient(
+    50deg,
+    var(--laranja-escuro-transparente),
+    var(--laranja-claro),
+    var(--laranja-escuro-transparente)
+  );
 }
 
-.copyrigth {
-  color: #ffffff;
-  padding: 1em 0 2em;
-  transition: 1.4s;
-  border-radius: 25%;
-}
+
 
 /* tablets */
 @media screen and (min-width: 768px) {
-  .formulario .container {
-    display: flex;
-    background: url(../imgs/banner-lateral.jpg);
-    background-size: contain;
-  }
   .form_content {
     width: 80vw;
     background-color: rgba(47, 46, 47, 0.912);
@@ -229,11 +235,6 @@ li:hover {
 
 /* desktop */
 @media screen and (min-width: 1024px) {
-  :root {
-    --font-size: 1rem;
-    --line-heigth: 1.8;
-  }
-
   .contatos .container {
     padding-left: calc((100% - 940px) / 2);
     padding-right: calc((100% - 940px) / 2);

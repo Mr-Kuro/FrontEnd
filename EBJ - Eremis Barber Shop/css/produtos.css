@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
+body {
+  background: url(../imgs/banner-2-escuro.jpg);
+}
+
 .conteudoPrincipal .container {
   display: flex;
   justify-content: center;

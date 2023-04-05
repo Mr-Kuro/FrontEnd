@@ -7,7 +7,7 @@
     <title>EBJ | Contatos</title>
 
     <link rel="stylesheet" href="../css/reset.css" />
-    <link rel="stylesheet" href="../css/header-and-footer.css">
+    <link rel="stylesheet" href="../css/header-and-footer.css" />
     <link rel="stylesheet" href="../css/contatos.css" />
   </head>
 
@@ -47,10 +47,10 @@
           alt="banner da barbearia"
         />
       </div>
-      
+
       <section class="contatos container">
         <ul class="contatos__lista">
-          <li class="contatos__item contatos__item--tempo">
+          <li class="contatos__item contatos__item--whatsapp">
             <h2 class="item__titulo">Whatsapp</h2>
             <p>
               <a class="item__texto" href="#"
@@ -58,7 +58,7 @@
               >
             </p>
           </li>
-          <li class="contatos__item contatos__item--foco">
+          <li class="contatos__item contatos__item--facebook">
             <h2 class="item__titulo">Facebook</h2>
             <p>
               <a class="item__texto" href="#" rel="páina do facebook"
@@ -66,7 +66,7 @@
               >
             </p>
           </li>
-          <li class="contatos__item contatos__item--especialistas">
+          <li class="contatos__item contatos__item--instagram">
             <h2 class="item__titulo">Instagram</h2>
             <p>
               <a class="item__texto" href="#"
@@ -77,139 +77,150 @@
           </li>
         </ul>
       </section>
-
-      <section class="formulario">
-        <div class="container">
-          <form class="form">
-            <fieldset class="form_content">
-              <legend class="formulario_titulo">
-                <h1>Formulário de Reclamação EBJ</h1>
-              </legend>
-              <p>
-                Obrigado por preencher esse formulário, amigo! Você é um amigo!
-              </p>
-
-              <div class="informacoes_pessoais">
-                <div class="form_item nome">
-                  <label for="nome">Nome</label>
-                  <input
-                    type="text"
-                    name="usuario_nome"
-                    maxlength="60"
-                    minlength="3"
-                    id="nome"
-                    required
-                  />
-                </div>
-
-                <div class="form_item telefone">
-                  <label for="telefone">Telefone</label>
-                  <input
-                    type="tel"
-                    name="usuario_telefone"
-                    maxlength="11"
-                    minlength="11"
-                    id="telefone"
-                    required
-                  />
-                </div>
-
-                <div class="form_item idade">
-                  <label for="idade">Idade</label>
-                  <input type="number" max="99" min="13" id="idade" required />
-                </div>
-              </div>
-
-              <fieldset class="form_item cabelereiro">
-                <legend for="cabelereiro">
-                  Qual cabelereiro melhor te atende?
+      
+      <div class="bg_form">
+        <section class="formulario">
+          <div class="container">
+            <form class="form">
+              <fieldset class="form_content">
+                <legend class="formulario_titulo">
+                  <h1>Formulário de Reclamação EBJ</h1>
                 </legend>
-                <select aria-valuetext="" name="cabelereiro">
-                  <option value="disble" disabled selected>
-                    Selecione seu cabelereiro
-                  </option>
-                  <option value="Desenvolvedor">Eremis</option>
-                  <option value="Medico">Jhonathan</option>
-                  <option value="Pastor">Rodigo</option>
-                  <option value="Militar">Thiago</option>
-                </select>
-              </fieldset>
+                <p id="obrigado_amigo_p">
+                  Obrigado por preencher esse formulário, amigo! Você é um
+                  amigo!
+                </p>
 
-              <fieldset class="form_item recomendacao">
-                <legend>Você recomendaria a EBJ Barbearia?</legend>
-                <label
-                  ><input
-                    type="radio"
-                    name="recomendacao"
-                    value="sim"
-                    checked
-                  />Sim</label
-                >
-                <label
-                  ><input
-                    type="radio"
-                    name="recomendacao"
-                    value="nao"
-                  />Não</label
-                >
-                <label
-                  ><input
-                    type="radio"
-                    name="recomendacao"
-                    value="talve"
-                  />Talvez</label
-                >
-              </fieldset>
+                <div class="informacoes_pessoais">
+                  <div class="form_item nome">
+                    <label for="nome">Nome</label>
+                    <input
+                      type="text"
+                      name="usuario_nome"
+                      maxlength="60"
+                      minlength="3"
+                      id="nome"
+                      required
+                    />
+                  </div>
 
-              <fieldset class="form_item cortes">
-                <legend for="cortes">Qual corte de cabelo prefere?</legend>
-                <select name="corte_pescolhido" id="cortes">
-                  <option value="disabled" disabled selected>
-                    Selecione um corte
-                  </option>
-                  <option value="Buzzcut">Buzzcut</option>
-                  <option value="Degradê">Degradê</option>
-                  <option value="Top Knot">Top Knot</option>
-                  <option value="Razor Part">Razor Part</option>
-                  <option value="Surfista">Surfista</option>
-                </select>
-              </fieldset>
+                  <div class="form_item telefone">
+                    <label for="telefone">Telefone</label>
+                    <input
+                      type="tel"
+                      name="usuario_telefone"
+                      maxlength="11"
+                      minlength="11"
+                      id="telefone"
+                      required
+                    />
+                  </div>
 
-              <fieldset class="form_item melhorias">
-                <legend for="melhorias">
-                  O que você gostaria que melhorasse?
-                </legend>
-                <p><small>Selecione todas as opçês que se aplicam.</small></p>
-                <label
-                  ><input
-                    class="melhorar"
-                    type="checkbox"
-                  />Estabelecimento</label
-                >
-                <label
-                  ><input class="melhorar" type="checkbox" />Horários</label
-                >
-                <label><input class="melhorar" type="checkbox" />Tempo</label>
-                <label
-                  ><input class="melhorar" type="checkbox" />Serviços</label
-                >
-              </fieldset>
+                  <div class="form_item idade">
+                    <label for="idade">Idade</label>
+                    <input
+                      type="number"
+                      max="99"
+                      min="13"
+                      id="idade"
+                      required
+                    />
+                  </div>
+                </div>
 
-              <div class="form_item mensagem">
-                <label for="msg">Mensagen</label>
-                <textarea
-                  name="msg"
-                  id="msg"
-                  placeholder="escreva uma descriança"
-                ></textarea>
-              </div>
-              <div class="button_container">
-                <button class="button" type="submit">Enviar formulario</button>
-              </div>
-            </fieldset>
-          </form>
-        </div>
-      </section>
+                <fieldset class="form_item cabelereiro">
+                  <legend for="cabelereiro">
+                    Qual cabelereiro melhor te atende?
+                  </legend>
+                  <select aria-valuetext="" name="cabelereiro">
+                    <option value="disble" disabled selected>
+                      Selecione seu cabelereiro
+                    </option>
+                    <option value="Desenvolvedor">Eremis</option>
+                    <option value="Medico">Jhonathan</option>
+                    <option value="Pastor">Rodigo</option>
+                    <option value="Militar">Thiago</option>
+                  </select>
+                </fieldset>
+
+                <fieldset class="form_item recomendacao">
+                  <legend>Você recomendaria a EBJ Barbearia?</legend>
+                  <label
+                    ><input
+                      type="radio"
+                      name="recomendacao"
+                      value="sim"
+                      checked
+                    />Sim</label
+                  >
+                  <label
+                    ><input
+                      type="radio"
+                      name="recomendacao"
+                      value="nao"
+                    />Não</label
+                  >
+                  <label
+                    ><input
+                      type="radio"
+                      name="recomendacao"
+                      value="talve"
+                    />Talvez</label
+                  >
+                </fieldset>
+
+                <fieldset class="form_item cortes">
+                  <legend for="cortes">Qual corte de cabelo prefere?</legend>
+                  <select name="corte_pescolhido" id="cortes">
+                    <option value="disabled" disabled selected>
+                      Selecione um corte
+                    </option>
+                    <option value="Buzzcut">Buzzcut</option>
+                    <option value="Degradê">Degradê</option>
+                    <option value="Top Knot">Top Knot</option>
+                    <option value="Razor Part">Razor Part</option>
+                    <option value="Surfista">Surfista</option>
+                  </select>
+                </fieldset>
+
+                <fieldset class="form_item melhorias">
+                  <legend for="melhorias">
+                    O que você gostaria que melhorasse?
+                  </legend>
+                  <p><small>Selecione todas as opçês que se aplicam.</small></p>
+                  <label
+                    ><input
+                      class="melhorar"
+                      type="checkbox"
+                    />Estabelecimento</label
+                  >
+                  <label
+                    ><input class="melhorar" type="checkbox" />Horários</label
+                  >
+                  <label><input class="melhorar" type="checkbox" />Tempo</label>
+                  <label
+                    ><input class="melhorar" type="checkbox" />Serviços</label
+                  >
+                </fieldset>
+
+                <div class="form_item mensagem">
+                  <label for="msg">Mensagen</label>
+                  <textarea
+                    name="msg"
+                    id="msg"
+                    placeholder="escreva uma descriançao"
+                  ></textarea>
+                </div>
+                <div class="button_container">
+                  <button class="button" type="submit">
+                    Enviar formulario
+                  </button>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+        </section>
+      </div>  
     </main>
 
     <footer class="footer">
