@@ -2,6 +2,6 @@
 ## Principais projetos até o momento
 
 ### Link dos 3 projetos até o momento:
-** [https://ebj-barbearia.vercel.app/](EBJ - Barbearia) um site apenas para fins didaticos
-** [https://apeperia-responsiva.vercel.app/](Apeperia - Responsiva) um site apenas para fins didaticos
-** [https://mugenkuro.vercel.app/](MugenKuro) Meu primeiro site.
+[EBJ - Barbearia](https://ebj-barbearia.vercel.app/) um site apenas para fins didaticos
+[Apeperia - Responsiva](https://apeperia-responsiva.vercel.app/) um site apenas para fins didaticos
+[MugenKuro](https://mugenkuro.vercel.app/) Meu primeiro site.
