@@ -1,0 +1,73 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+
+  background: linear-gradient(60deg, #050505 0%, #545454 50%, #514b4b 100%);
+  color: #fff;
+}
+
+ul {
+
+  width: 80vw;
+  padding: 1rem;
+  box-sizing: border-box;
+  list-style: none;
+  border-radius: 10px;
+  box-shadow: 3px 4px 14px 0px rgba(135, 135, 135, 0.39);
+}
+
+
+button {
+  background-color: #fff;
+  opacity: 60%;
+  transition: all 0.5s;
+  margin: 0 1rem;
+  width: 30%;
+  border-radius: 8px;
+  box-shadow: 3px 4px 14px 0px rgba(0, 0, 0, 0.39);
+}
+
+button:hover {
+  opacity: 98%;
+}
+
+.title {
+  font-family: "Dancing Script", cursive !important;
+  color: #fff;
+  font-size: 8rem;
+  text-shadow: 10px 10px 8px rgb(255, 255, 255);
+
+}
+
+.todo_list{
+  margin-top: 6rem;
+  padding: 1rem 0 0;
+  justify-content: center;
+  width: 100%;
+}
+
+.wrapper {
+  display: flex;
+  align-content: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+
+
+  width: 100vw;
+  padding: 1rem 1rem .5rem;
+  margin: 0 !important;
+  background: #000;
+  position: fixed;
+}
+
+#logo{
+  width: 50px;
+}
+
+#tarefa{
+  width: 50vw;
+}

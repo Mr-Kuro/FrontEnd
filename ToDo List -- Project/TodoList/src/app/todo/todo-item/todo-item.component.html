@@ -1,0 +1,15 @@
+<nav role="listitem">
+  <ul >
+    <span>
+      <h3 [ngStyle]="{ opacity: todo.done ? '20%' : '100%' }">
+      {{ todo.title }}</h3>
+    </span>
+    <li>
+      <div class="botoes">
+        <button class="btn" aria-label="Marca como consluido"
+        (click)="markAsDone()">Done</button>
+        <button class="btn" (click)="removeTodo()">Excluir</button>
+      </div >
+    </li>
+  </ul>
+</nav>

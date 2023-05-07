@@ -1,0 +1,28 @@
+<section>
+  <td class="wrapper">
+    <div class="header">
+      <h1 class="title"><img id="logo" src="../../../favicon.ico" alt="logo"> Lista de Tarefas</h1>
+      <mat-form-field id="tarefa" class="form-field">
+        <mat-label>Tarefa:</mat-label>
+        <input
+          matInput
+          type="text"
+          placeholder="Digite a sua tarefa..."
+          #todo
+          (keyup.enter)="addTodo(todo.value); todo.value = ''"
+        />
+      </mat-form-field>
+    </div>
+    <div class="wrapper todo_list">
+      <mat-list role="list">
+        <div *ngFor="let todo of todos">
+          <app-todo-item
+            [todo]="todo"
+            (remove)="removeTodo($event)"
+            (save)="saveTodo($event)"
+          ></app-todo-item>
+        </div>
+      </mat-list>
+    </div>
+  </td>
+</section>
