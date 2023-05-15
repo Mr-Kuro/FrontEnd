@@ -1,4 +1,25 @@
-# MkPortifolio
+# MK Portifólio
+
+### Descrição
+  <p> Este é o repositório do meu site portifólio. Atualmente o projeto se encontra na verção número 1, mas já está
+    disponível para acesso. Contem um visual minimalista e refinado,  além de ser adquado para os mais diversos tipos de telas.
+  </p>
+ 
+<h3>Ferramentas</h3>
+  <u>
+    <li>CSS3</li>
+    <li>HTML5</li>
+    <li>JavaScript</li>
+    <li>Typescript</li>
+    <li>Angular</li>
+    <li>Vercel</li>
+    <li>Figma</li>
+  </u>
+
+<br>
+<br>
+
+# A Respeito do Agular, dependências e tutoriais
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.0.
 
